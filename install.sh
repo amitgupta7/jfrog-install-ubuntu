@@ -1,4 +1,5 @@
 #! /bin/bash
+set -e
 JFROG_HOME=/data/jfrog
 DIST=$(lsb_release -cs)
 echo "deb https://releases.jfrog.io/artifactory/artifactory-debs $(lsb_release -cs) main" | sudo tee -a /etc/apt/sources.list
